@@ -88,3 +88,36 @@ main {
 footer {
     background-color: orange;
 }
+/*media queries for larger screens*/
+@media (min-width: 768px) {
+    /* Header adjustments */
+    /* Nav adjustments */
+    nav {
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        display: block;
+        padding-right: 1rem;
+    }
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 200%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+    main {
+        /* margin to account for fixed header */
+        margin-top: 79px;
+    }
+}
