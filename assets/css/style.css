@@ -1,3 +1,6 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Oswald:wght@200..700&display=swap");
+
 /* Using the asterisk allows the reset of default styles */
 
 * {
@@ -6,13 +9,14 @@
     box-sizing: border-box;
 }
 /* General styles */
-body {min-height: 100vh;
+body {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     /* Generic project styles */
     color: #3a3a3a;
-    
-    }
+    font-family: "Lato", sans-serif;
+}
 
 /* Header */
 header {
@@ -22,7 +26,7 @@ header {
 main {
     background-color: lightblue;
     /*makes main take up all available space*/
-    flex:1 0 auto;
+    flex: 1 0 auto;
 }
 /* Footer */
 footer {
