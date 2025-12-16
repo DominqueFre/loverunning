@@ -85,9 +85,20 @@ main {
     margin-top: 47px;
 }
 /* Footer */
-footer {
-    background-color: orange;
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
+
+#social-networks i {
+    font-size: 160%;
+    color: #3a3a3a;
+    padding: 5%;
+}
+
 /*media queries for larger screens*/
 @media (min-width: 768px) {
     /* Nav adjustments */
