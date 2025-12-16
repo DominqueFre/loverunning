@@ -90,7 +90,6 @@ footer {
 }
 /*media queries for larger screens*/
 @media (min-width: 768px) {
-    /* Header adjustments */
     /* Nav adjustments */
     nav {
         position: relative;
@@ -102,15 +101,12 @@ footer {
     #menu {
         display: flex;
     }
-
     #menu > li {
         padding-left: 1rem;
     }
-
     .nav-toggle-label {
         display: none;
     }
-
     #logo {
         font-size: 200%;
         line-height: 75px;
@@ -119,5 +115,13 @@ footer {
     main {
         /* margin to account for fixed header */
         margin-top: 79px;
+    }
+}
+@media (min-width: 992px) {
+    #logo {
+        font-size: 250%;
+    }
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
     }
 }
