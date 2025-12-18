@@ -92,6 +92,8 @@ main {
     /*makes main take up all available space*/
     flex: 1 0 auto;
     margin-top: 47px;
+    display: flex;
+    flex-direction: column;
 }
 /* Hero Section */
 #hero {
@@ -189,18 +191,12 @@ main {
 }
 /* Signup Section */
 
-main {
-    display: flex;
-    flex-direction: column;
-}
 #signup {
-    background-image: url("../images/signup-image.webp") no-repeat center
-        center/cover;
-    height: 100%;
-    background-position: 75%;
+    background-image: url("../images/signup-image.webp");
+    background-size: cover;
+    background-position: 75% center;
     flex-grow: 1;
-    /* position:relative; */
-    padding: 20px;
+    padding: 20px 10% 0 10%;
 }
 
 #signup-form {
@@ -221,6 +217,7 @@ main {
     height: 25px;
     width: 100%;
     margin: 5px 0 20px 0;
+    background-color: #fafafa00;
 }
 .radio-buttons {
     display: flex;
@@ -311,6 +308,25 @@ main {
     #photos {
         column-count: 3;
         column-gap: 0;
+    }
+    /* signup tweaks */
+    #signup {
+        position: relative;
+        background-position: 60%;
+        /* padding: 150px 0 0 10%; */
+    }
+    #signup-form {
+        position: absolute;
+        /* left: 10%; not necessary*/
+        max-width: 400px;
+        top: 130px; /* 20px already in padding */
+    }
+    .text-input:hover {
+        border-color: #f16c6b;
+    }
+    .join-button:hover {
+        background-color: #fafafa;
+        color: #454b1b;
     }
 }
 @media (min-width: 992px) {
