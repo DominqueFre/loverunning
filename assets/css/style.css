@@ -179,6 +179,14 @@ main {
     /* overrides previous h3 style */
     color: #fafafa;
 }
+/* Gallery Section */
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+#photos {
+    line-height: 0;
+}
 
 /* Footer */
 #social-networks {
@@ -195,6 +203,13 @@ main {
     padding: 5%;
 }
 
+/*media queries for landscape mobile*/
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
 /*media queries for larger screens*/
 @media (min-width: 768px) {
     /* Nav adjustments */
@@ -244,6 +259,10 @@ main {
         text-align: end;
         align-self: flex-end;
     }
+    #photos {
+        column-count: 3;
+        column-gap: 0;
+    }
 }
 @media (min-width: 992px) {
     #logo {
@@ -251,6 +270,10 @@ main {
     }
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
+    }
+    #photos {
+        column-count: 4;
+        column-gap: 0;
     }
 }
 @media (min-width: 1200px) {
